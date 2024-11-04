@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <form class="form" action="">
+
+            <div class="name a">
+                <label for="name">Name :</label>
+                <input placeholder="Name" type="text" id="name" name="Name">
+                <div id="namemessage" class="msg"></div>
+            </div>
+            <div class="email a">
+            <label  for="email">Email :</label>
+            <input placeholder="Email" type="email" id="email" name="Email"> 
+            <div id="emailmessage" class=" msg"></div>
+        </div>
+        <div class="age a">
+            <label for="age">Age : ( greater than 18 )</label>
+            <input placeholder="Age" type="number" id="age" name="Age">
+            <div id="agemessage" class=" msg"></div>
+        </div>
+        <div class="gender a">
+            <label for="gender">Gender :</label>
+            <select name="gender" id="gender">
+                <option value="" disabled selected>select gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="others">others</option>
+            </select>
+            <div id="gendermessage" class=" msg"></div>
+        </div>
+        <div class="button a">
+            <button type="button" onclick="formValidation()">Submit</button>
+        </div>
+    </form>
+</body>
+<script src="./script.js"></script>
+</html>
